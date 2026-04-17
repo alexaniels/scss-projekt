@@ -12,8 +12,8 @@ Variabler defineret i blokke ({}) er normalvis lokale og kan kun tilgås inde i 
 /*Mixin*/
 /*Mixin er en måde at genbruge kode på. Vi kan tage kode som bruges flere steder og samle dem det i en mixin*/
 @mixin flex($justify: center, $align: center){
-/*$justify og $align er parametre/variabler som kan ændres når vores mixin kaldes*/
-display: flex;
-justify-content: $justify;
-align-items: $align;
+    /*$justify og $align er parametre/variabler som kan ændres når vores mixin kaldes*/
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
 } 
