@@ -87,3 +87,38 @@ body{
             color: partial.$primary-color;
         }
   }
+
+  /*Hero banner section*/
+  .header-img{
+    grid-column: 1/6;
+    background-image: url(../img/computer.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 75vh;
+    margin-bottom: 1em;
+    border-bottom: 4px solid partial.$primary-color;
+      .banner-tekst{
+        position: absolute;
+        left: 5%;
+        top: 30%;
+
+        h1{
+          font-size: 3.5vw;
+        }
+          
+        p{
+          font-size: 2vw;
+        }
+        
+        a{
+          @include partial.btn;
+          position: absolute;
+        
+          &:hover{
+          background-color: partial.$secondary-color;
+          transition: 0.3s ease-in-out;
+          }
+      }
+  }
+}

@@ -17,3 +17,13 @@ Variabler defineret i blokke ({}) er normalvis lokale og kan kun tilgås inde i 
     justify-content: $justify;
     align-items: $align;
 } 
+
+@mixin btn($bg-color:$primary-color, $btn-padding: 0.8em 1 em){
+    background-color: $bg-color;
+    padding: $btn-padding;
+    border-radius: 8px;
+    color: #ffffff;
+    text-decoration: none;
+    text-align: center;
+
+}
